@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-ovul
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-ldtk-tenant/nodejs-users/simple-nodejs-app-ovul@sha256:2f2a79e6a686d517d433452bcf6edf7af7b36ffe493ecd98f6372b2c50973069
+        name: my-nodejs
+        resources: {}
+status: {}
